@@ -21,7 +21,7 @@ export default function Game() {
 				<span
 					key={idx}
 					style={{
-						color: isWin ? "magenta" : "purple", // each slot label color
+						color: isWin ? "yellow" : "purple", // each slot label color
 						fontSize: "80px", // correct inline style
 						margin: "0 8px",
 					}}
