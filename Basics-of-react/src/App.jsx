@@ -7,6 +7,7 @@ import "./App.css";
 import Greeter from "./Greeter";
 import Die from "./Die";
 import Place from "./Place";
+import Clicker from "./Clicker";
 
 import Game from "./Game";
 const data = [
@@ -30,7 +31,8 @@ const data = [
 		name: "Suburban Family Home",
 		amount: 2200,
 		rating: 4.5,
-		imageUrl: "https://images.unsplash.com/photo-1560448075-bb4bfc8b1f3e",
+		imageUrl:
+			"https://plus.unsplash.com/premium_photo-1684508638760-72ad80c0055f?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 		location: "Austin, TX",
 		type: "House",
 		bedrooms: 3,
@@ -89,6 +91,12 @@ const data = [
 function App() {
 	return (
 		<>
+			<Clicker message={"You clicked it"} buttontext={"Click me"} />
+			<Clicker
+				message={"nice"}
+				buttontext={"Do something nice and Click me"}
+			/>
+
 			<Place info={data} />
 		</>
 	);
