@@ -9,6 +9,7 @@ import Die from "./Die";
 import Place from "./Place";
 import Clicker from "./Clicker";
 import Boxes from "./Boxes";
+import Players from "./Players";
 
 import Game from "./Game";
 const data = [
@@ -115,14 +116,15 @@ const palette = [
 function App() {
 	return (
 		<>
-			<Boxes colorArr={palette} />
+			<Players scoreEnd={10} numPlayers={3} />
+			{/* <Boxes colorArr={palette} />
 			<Clicker message={"You clicked it"} buttontext={"Click me"} />
 			<Clicker
 				message={"nice"}
 				buttontext={"Do something nice and Click me"}
 			/>
 
-			<Place info={data} />
+			<Place info={data} /> */}
 		</>
 	);
 }
