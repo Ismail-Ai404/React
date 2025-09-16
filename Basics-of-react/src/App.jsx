@@ -8,6 +8,7 @@ import Greeter from "./Greeter";
 import Die from "./Die";
 import Place from "./Place";
 import Clicker from "./Clicker";
+import Boxes from "./Boxes";
 
 import Game from "./Game";
 const data = [
@@ -87,10 +88,34 @@ const data = [
 			"An opulent penthouse offering breathtaking city views, state-of-the-art appliances, and unparalleled luxury.",
 	},
 ];
+const palette = [
+	"#FF6B6B", // Coral Red
+	"#FFD93D", // Sun Yellow
+	"#6BCB77", // Mint Green
+	"#4D96FF", // Sky Blue
+	"#845EC2", // Violet
+	"#FF9671", // Soft Orange
+	"#2C73D2", // Royal Blue
+	"#008E9B", // Teal
+	"#FF61A6", // Hot Pink
+	"#00C9A7", // Turquoise
+
+	"#FFB5A7", // Blush Pink
+	"#FCD5CE", // Soft Peach
+	"#F8EDEB", // Cream White
+	"#CDB4DB", // Lilac Purple
+	"#FFC8DD", // Light Pink
+	"#B5E48C", // Lime Green
+	"#99D98C", // Spring Green
+	"#76C893", // Emerald Green
+	"#34A0A4", // Deep Teal
+	"#1A759F", // Ocean Blue
+];
 
 function App() {
 	return (
 		<>
+			<Boxes colorArr={palette} />
 			<Clicker message={"You clicked it"} buttontext={"Click me"} />
 			<Clicker
 				message={"nice"}
